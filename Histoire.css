@@ -1,0 +1,41 @@
+/*Styliser le bloc header*/
+body {background-color: black;}
+header {display: flex;
+    flex-direction: column;
+    height: 100px;}
+
+    nav {background-color: black;}
+
+    nav ul li{
+        display: inline-block;
+        list-style-type: none; /*pour éliminer les points*/
+        padding: 10px;}
+    
+    a {
+        font-stretch: extra-expanded; /*une écriture étalée*/
+        text-decoration: none; /*enlever le underline*/
+        justify-content: space-between; /*pour centrer*/
+        font-style: oblique;
+        font-size: x-large;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bolder;
+    color: white;}
+    
+    /************************************************************************************/
+    /*styliser le bloc main*/
+section{display: flex;}
+.block1, .block4, .block5 {display: flex;
+flex-direction: column;}
+.Enfance, .Engagement, .Mort {border: solid;
+    border-radius: 10px;}
+
+.alpha, .beta, .gama{height: 300px;
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;}
+p {font-size: large;
+font-family: 'Times New Roman', Times, serif;
+color: white;}
+h2 {color: white;}

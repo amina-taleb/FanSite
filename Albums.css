@@ -1,0 +1,54 @@
+/*Styliser le bloc header*/
+body {background-color: black;}
+header {display: flex;
+    flex-direction: column;}
+
+    nav {background-color: black;}
+
+    nav ul li{
+        display: inline-block;
+        list-style-type: none; /*pour éliminer les points*/
+        padding: 10px;}
+    
+    a {
+        font-stretch: extra-expanded; /*une écriture étalée*/
+        text-decoration: none; /*enlever le underline*/
+        justify-content: space-between; /*pour centrer les images*/
+        font-style: oblique;
+        font-size: x-large;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bolder;
+        color: white;}
+
+/*Styliser le bloc main*/
+main {
+    padding: 10px;}
+.card {
+/* justify-content: space-between; /*content c'est pour tout le contenu et item c'est pour les images*/
+justify-items: center;
+align-items: center;
+border: solid white;
+border-width: 1px;}
+.grid {display: grid;
+grid-gap: 40px; /*définir le gap entre les cellules*/
+grid-template-columns: repeat(3, minmax(200px, 1fr));/* 1fr une fraction de l'espace disponible du contenaire, toute la commande permet de définir la taille min des cellules et les agrandir selon la taille de l'écran*/
+grid-template-rows: repeat(4, 1fr);}
+
+h3 {color: white;
+font-style: oblique;
+font-size: x-large;
+justify-items: center;}
+.nadia {
+    height: 300px;
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    /*pour cadrer les images
+            border-color: #8eae44;
+            border-image: none;
+            border-radius: 20% 20% 20% 20%;
+            border-style: solid;
+            border-width: 5px;*/}
+.audio {justify-content: center;}

@@ -1,0 +1,67 @@
+/*Styliser le bloc header*/
+body {background-color: black;}
+header {display: flex;
+    flex-direction: column;
+    height: 100px;}
+    nav {background-color:black}
+
+    nav ul li{
+        display: inline-block;
+        list-style-type: none; /*pour éliminer les points*/
+        padding: 10px;}
+    
+    a {
+        font-stretch: extra-expanded; /*une écriture étalée*/
+        text-decoration: none; /*enlever le underline*/
+        justify-content: space-between; /*pour centrer*/
+        font-style: oblique;
+        font-size: x-large;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bolder;
+        color: white}
+
+main {display: flex;
+flex-direction: column;}
+
+.drap {height: 80px; width: 80px; align-items: center;}
+.titre {color: white;
+text-align: center;
+font-size: xX-large;
+font-family: Brush Script MT, Brush Script Std, cursive;
+text-decoration :solid;}
+
+.slides {overflow: hidden;
+height: 600px;
+width: 1200px;
+margin-left: 200px;
+margin-top: 20px;} /*lespropriétés de la fenêtre des slides*/
+
+/*animation des slides*/
+@-webkit-keyframes slide_animation {
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:1200px;}
+    3% {left:1200px;}
+    40% {left:2400px;}
+    50% {left:2400px;}
+    60% {left:1200px;}
+    70% {left:1200px;}
+    80% {left:0px;}
+    90% {left:0px;}
+    100% {left:0px;}}
+.slides-image {width: 3600px; height: 800px; margin: 0 0 0 -2400px; position: relative;
+-webkit-animation-name: slide_animation;
+-webkit-animation-duration: 30s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-direction: alternate;
+-webkit-animation-play-state: running;}
+
+.image {height: 800px; width: 1200px; position: relative; float: left;}
+.accueil {height: 800px; width: 1200px}
+
+/*Responsive Design using Media Queries*/
+@media screen and (max-width:1500px) { /*on a utilisé screen pour selectionner les ecrans*/
+    .slides {
+        width: 90%;
+    }
+}

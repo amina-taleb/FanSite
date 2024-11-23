@@ -1,0 +1,41 @@
+/*Styliser le bloc header*/
+body {background-color: black;}
+header {display: flex;
+    flex-direction: column;
+    height: 100px;}
+    nav {background-color:black}
+
+    nav ul li{
+        display: inline-block;
+        list-style-type: none; /*pour éliminer les points*/
+        padding: 10px;}
+    
+    a {
+        font-stretch: extra-expanded; /*une écriture étalée*/
+        text-decoration: none; /*enlever le underline*/
+        justify-content: space-between; /*pour centrer*/
+        font-style: oblique;
+        font-size: x-large;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bolder;
+        color: white}
+
+
+.titre {display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+color: white;}
+.drap {height: 80px;
+    width: 80px;
+    align-items: center;}
+
+.grid {display: grid;
+grid-gap: 50px;
+grid-template-columns: repeat(2, 1fr);
+margin: 10px;}
+h2 {color: white;}
+h3 {color: white;}
+.liens {color: yellow;
+font-size: small;}
